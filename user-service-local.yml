@@ -28,6 +28,8 @@ spring:
 
 eureka:
   instance:
+    appname: USER-SERVICE
+    instance-id: ${spring.application.name}:${random.value}
     lease-renewal-interval-in-seconds: 5
     lease-expiration-duration-in-seconds: 10
   client:
