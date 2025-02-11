@@ -27,6 +27,9 @@ spring:
       port: 6379
 
 eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 10
   client:
     register-with-eureka: true
     fetch-registry: true
