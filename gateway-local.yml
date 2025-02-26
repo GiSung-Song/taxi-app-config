@@ -12,6 +12,9 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 
 spring:
+  main:
+    web-application-type: reactive
+
   data:
     redis:
       host: 127.0.0.1
