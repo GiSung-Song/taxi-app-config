@@ -12,6 +12,10 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 
 spring:
+  security:
+    csrf:
+      enabled: false
+
   main:
     web-application-type: reactive
 
