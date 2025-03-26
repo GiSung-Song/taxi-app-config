@@ -35,6 +35,11 @@ spring:
           predicates:
             - Path=/api/user/**, /oauth2/authorization/**, /api/auth/** # 이 경로로 요청이 들어오면 user-service로 전달
 
+        - id: ride-service
+          uri: lb://RIDE-SERVICE
+          predicates:
+            - Path=/api/driver/**, /api/ride/**
+
 webflux:
   cors:
     mappings:
