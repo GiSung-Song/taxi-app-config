@@ -18,7 +18,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create
-      dialect: org.hibernate.dialect.MySQL8Dialect
+      dialect: org.hibernate.dialect.MySQLDialect
     generate-ddl: false
     show-sql: true
     open-in-view: false
