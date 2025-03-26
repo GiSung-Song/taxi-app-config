@@ -11,7 +11,7 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/taxi?serverTimezone=UTC
+    url: jdbc:mysql://mysql:3306/taxi?serverTimezone=UTC
     username: gisung
     password: 1234
 
