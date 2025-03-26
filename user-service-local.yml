@@ -13,13 +13,13 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://host.docker.internal:3306/taxi?serverTimezone=UTC
     username: root
-    password: 1234
+    password: root
 
   jpa:
     hibernate:
       ddl-auto: create
+      dialect: org.hibernate.dialect.MySQLDialect
     generate-ddl: false
-    database-platform: org.hibernate.dialect.MySQLDialect
     show-sql: true
     open-in-view: false
     properties:
