@@ -42,18 +42,3 @@ eureka:
 logging:
   level:
     org.hibernate: info
-
-feign:
-  client:
-    config:
-      user-service:
-        connect-timeout: 5000
-        read-timeout: 5000
-
-jwt:
-  secretKey: gl1tat3lokz2752kj8zgzwetotb4mquvfFDJ2JOfeOIHJqOPIHJwraPOIHJ3
-  access:
-    expiration: 3600000 # 만료시간 30분 (1000 * 60 * 30)
-
-  refresh:
-    expiration: 1209600000 # 만료시간 2주 (60 * 60 * 24 * 14) / Duration
