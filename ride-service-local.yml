@@ -2,6 +2,15 @@ server:
   port: 0
 
 spring:
+  kafka:
+    bootstrap-servers: localhost:10000,localhost:10001,localhost:10002
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    consumer:
+      group-id: taxi-consumer-group
+      auto-offset-reset: earliest
+
   application:
     name: ride-service
 
